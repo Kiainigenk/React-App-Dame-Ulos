@@ -55,10 +55,10 @@ const Footer = () => {
         <div className="footer-social">
           <h4>Ikuti Kami</h4>
           <div className="social-icons">
-            <a href="#" className="social-icon">📘 Facebook</a>
-            <a href="#" className="social-icon">📸 Instagram</a>
-            <a href="#" className="social-icon">🎬 TikTok</a>
-            <a href="#" className="social-icon">▶️ YouTube</a>
+<a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="social-icon">📘 Facebook</a>
+<a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="social-icon">📸 Instagram</a>
+<a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" className="social-icon">🎬 TikTok</a>
+<a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="social-icon">▶️ YouTube</a>
           </div>
         </div>
 

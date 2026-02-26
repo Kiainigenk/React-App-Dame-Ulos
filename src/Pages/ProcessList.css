@@ -1,0 +1,133 @@
+/* === ProcessList.css === */
+
+/* Container Utama */
+.process-list-page {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Inter', sans-serif;
+    background-color: #fdfdfd;
+  }
+  
+  /* Bagian Header (Judul) */
+  .list-header {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  
+  .list-header h1 {
+    font-size: 2.8rem;
+    color: #333; /* Warna Gelap Elegan */
+    margin-bottom: 15px;
+    font-weight: 700;
+    letter-spacing: -1px;
+  }
+  
+  .list-header p {
+    color: #666;
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+  
+  /* Grid Layout (Kartu-kartu) */
+  .process-list-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Responsif otomatis */
+    gap: 40px;
+  }
+  
+  /* Kartu Individual */
+  .list-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05); /* Bayangan lembut */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 1px solid #eee;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Efek Hover pada Kartu */
+  .list-card:hover {
+    transform: translateY(-10px); /* Naik sedikit saat disentuh */
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    border-color: #D69E2E; /* Border jadi emas */
+  }
+  
+  /* Bungkus Gambar */
+  .list-img-wrapper {
+    height: 240px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .list-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+  }
+  
+  /* Efek Zoom Gambar saat Hover */
+  .list-card:hover .list-img-wrapper img {
+    transform: scale(1.1);
+  }
+  
+  /* Konten Teks dalam Kartu */
+  .list-content {
+    padding: 25px;
+    text-align: center;
+    flex-grow: 1; /* Agar tombol selalu di bawah */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .list-cat {
+    font-size: 0.75rem;
+    color: #D69E2E; /* Warna Emas */
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+  }
+  
+  .list-content h3 {
+    margin: 0 0 20px;
+    font-size: 1.4rem;
+    color: #1a202c;
+    font-weight: 600;
+  }
+  
+  /* Tombol "Lihat Detail" */
+  .read-more-btn {
+    margin-top: auto;
+    background: transparent;
+    border: 2px solid #D69E2E;
+    color: #D69E2E;
+    padding: 10px 24px;
+    border-radius: 50px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .list-card:hover .read-more-btn {
+    background: #D69E2E;
+    color: white;
+  }
+  
+  /* Responsif untuk HP */
+  @media (max-width: 768px) {
+    .list-header h1 {
+      font-size: 2rem;
+    }
+    .process-list-grid {
+      grid-template-columns: 1fr; /* 1 kolom di HP */
+      padding: 0 10px;
+    }
+  }
